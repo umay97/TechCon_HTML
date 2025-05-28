@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - TechCon 2024</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header, footer {
+      background: #004080;
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+    nav a {
+      color: #fff;
+      margin-right: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+      color: #004080;
+    }
+    section.contact-info {
+      margin-bottom: 2rem;
+    }
+    section.contact-info h2 {
+      margin-bottom: 0.5rem;
+      color: #004080;
+    }
+    .social-links a {
+      margin-right: 1rem;
+      color: #004080;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+    .map-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      margin-bottom: 2rem;
+    }
+    .map-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 6px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      margin-top: 0.3rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      min-height: 80px;
+    }
+    textarea {
+      min-height: 120px;
+    }
+    button[type="submit"] {
+      margin-top: 2rem;
+      padding: 0.75rem;
+      font-size: 1.1rem;
+      background-color: #004080;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      align-self: flex-start;
+    }
+    button[type="submit"]:hover {
+      background-color: #003366;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Contact Us</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="register.html">Register</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="contact-info">
+    <h2>Get in Touch</h2>
+    <p>Email us at: <a href="mailto:email@example.com">email@example.com</a></p>
+    <p>Follow us on social media:</p>
+    <p class="social-links">
+      <a href="https://twitter.com/TechCon2024" target="_blank" rel="noopener noreferrer">Twitter</a>
+      <a href="https://facebook.com/TechCon2024" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://linkedin.com/company/techcon2024" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
+  </section>
+
+  <section class="map-container" aria-label="Location map of TechCon 2024 venue">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019889002028!2d-122.40135778468094!3d37.79361367975659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064b4a3e4b5%3A0x543298a6f785e9ab!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1695380760000!5m2!1sen!2sus" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"
+      title="TechCon 2024 Venue Location"
+    ></iframe>
+  </section>
+
+  <section class="contact-form">
+    <h2>Contact Us Form</h2>
+    <form action="#" method="post" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required aria-required="true" placeholder="Your full name" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required aria-required="true" placeholder="you@example.com" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required aria-required="true" placeholder="Write your message here"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>Copyright © 2024 TechCon. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
