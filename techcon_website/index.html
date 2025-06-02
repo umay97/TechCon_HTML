@@ -20,9 +20,10 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
+  <!-- Main Section -->
   <main>
-    <section id="conference-intro" aria-labelledby="intro-heading">
+    <!-- ✅ Section begins here -->
+    <section id="intro-section" aria-labelledby="intro-heading">
       <h2 id="intro-heading">Welcome to TechCon 2024</h2>
       <p>
         TechCon 2024 is the premier technology conference bringing together innovators,
@@ -30,14 +31,16 @@
         hands-on workshops, and networking opportunities that shape the future of tech.
       </p>
 
-      <!-- Required HTML5 Video Element -->
+      <!-- ✅ Video with controls -->
       <video controls width="600" aria-describedby="video-desc">
-        <source src="techcon-promo.mp4" type="video/mp4">
-        <track src="techcon-subtitles.vtt" kind="subtitles" srclang="en" label="English" default>
+        <source src="techcon-promo.mp4" type="video/mp4" />
+        <track src="techcon-subtitles.vtt" kind="subtitles" srclang="en" label="English" default />
         Your browser does not support the video tag.
       </video>
+
+      <!-- ✅ Hidden video description -->
       <p id="video-desc" hidden>
-        A promotional video for TechCon 2024 showcasing speakers, workshops, and the venue.
+        A promotional video for TechCon 2024 featuring event highlights and speakers.
       </p>
     </section>
   </main>
